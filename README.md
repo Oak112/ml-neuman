@@ -7,6 +7,19 @@ This repository is a reference implementation for NeuMan. NeuMan reconstructs bo
  <p align="center">
   <img src="./resources/teaser.gif" height="260">
 </p>
+### 标准流程
+* 数据准备
+将data放在neuman-appearance文件夹下
+
+* 环境配置
+```sh
+conda env create -f environment.yml
+```
+
+* 人体训练
+```sh
+python train.py --scene_dir ./data/bike  --name=bike_human --load_background=bike_background --train_mode=smpl_and_offset
+```
 
 ### Video demos
 
